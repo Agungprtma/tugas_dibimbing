@@ -1,0 +1,22 @@
+ETL = Extract, Load, Transform.
+
+metode mapreduce untuk mengolah data yang exponensial
+
+
+
+
+
+
+
+
+============================================================================================================================================
+OLTP = Online Transactional Platform // database untuk transaksi, contoh databasenya mysql, postgre, MS.Sql . tidak untuk perhitungan aggregrasi. 
+
+OLAP = Online Analytical Platform // kalau di cloud disebut bigquery, di lokal hdfs, HBase, Casandra
+
+OLTP dan OLAP memiliki fungsinya tersendiri : 
+  - OLTP sangat cocok untuk melakukan manipulasi data, seperti melakukan create, get dan lain lain.
+  - OLAP sangat cocok untuk melakukan perhitungan yang cepat.
+
+makanya dalam industri. jika diberikan contoh alfamart pusat dan cabang. di alfamart cabang atau sekelas toko mereka menggunakan server atau databse dalam bentuk oltp, sedangkan semua data dari cabang akan dikirim ke pusat, dan pusat akan menggunakan OLAP.
+============================================================================================================================================
